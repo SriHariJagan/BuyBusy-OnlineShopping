@@ -24,7 +24,7 @@ Follow these simple steps to get the BuyBusy application running on your local m
 
 1. **Clone the repository:**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/SriHariJagan/BuyBusy-OnlineShopping.git
    ```
 
 2. **Navigate to the project directory:**
