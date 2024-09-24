@@ -165,7 +165,7 @@ function CustomContext({ children }) {
 
     useEffect(() => {
         applyFilters();
-    }, [selectedCategories, priceRange]);
+    }, [selectedCategories, priceRange, applyFilters]);
 
     return (
         <CartContext.Provider value={{
