@@ -1,0 +1,67 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: #f0f0f0;
+  }
+  
+  .errorWrapper {
+    text-align: center;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .errorCode {
+    font-size: 72px;
+    color: #ff4757;
+    margin: 0;
+  }
+  
+  .errorMessage {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0 20px;
+  }
+  
+  .homeLink {
+    color: #4CAF50;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .homeLink:hover {
+    background-color: #4CAF50;
+    color: #fff;
+  }
+
+  .redirectMessage {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+}
+
+.pathMessage {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+    margin-bottom: 20px
+}
+
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .errorCode {
+      font-size: 48px;
+    }
+    
+    .errorWrapper {
+      padding: 20px;
+    }
+  }
+  

@@ -1,0 +1,97 @@
+.orderContainer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2f2f2f;
+}
+
+.orderCard {
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.orderTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.orderTable th, .orderTable td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.orderTable th {
+  background-color: #f1f1f1;
+}
+
+.orderTable td {
+  background-color: #fff;
+}
+
+.totalAmount {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+@media (max-width: 500px) {
+  .orderCard{
+    overflow-x: auto;
+  }
+
+  .orderTable{
+    width: 110vw;
+  }
+}
+
+
+/* Responsive Design
+@media (max-width: 768px) {
+  .orderTable {
+    display: block;
+    width: 100%;
+  }
+
+  .orderTable thead {
+    display: none;
+  }
+
+  .orderTable tbody, .orderTable tr {
+    display: block;
+    width: 100%;
+  }
+
+  .orderTable td {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+  }
+
+  .orderTable td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .orderTable td[data-label="Title"] {
+    font-weight: bold;
+    color: #2c3e50;
+  }
+} */
+
+

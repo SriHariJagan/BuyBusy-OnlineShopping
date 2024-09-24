@@ -1,0 +1,75 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background-color: #f0f0f0;
+  }
+  
+  .formWrapper {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #45a049;
+  }
+  
+  .text {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  .loginLink {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+  
+  .loginLink:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+
+  @media (max-width: 800px) {
+    .container {
+        min-height: 68vh;
+    }
+  }
+
+
+  @media (max-width: 600px) {
+    .formWrapper {
+      padding: 20px;
+    }
+  }
+  
