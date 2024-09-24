@@ -22,7 +22,7 @@ function CustomContext({ children }) {
     const [orders, setOrders] = useState([]);
 
      // Filters states
-     const [priceRange, setPriceRange] = useState(1000); // Max price
+     const [priceRange, setPriceRange] = useState(1599); // Max price
      const [selectedCategories, setSelectedCategories] = useState([]);
 
     // Add Items to Cart
