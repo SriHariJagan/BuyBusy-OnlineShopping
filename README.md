@@ -91,3 +91,18 @@ Follow these simple steps to get the BuyBusy application running on your local m
 - **react-spinner**: Loading indicators for a better user experience.
 - **CSS**: Styling for the application.
 
+## 📸 Image
+
+- **Home Page**:
+![image](https://github.com/user-attachments/assets/0137214c-0e25-4d4e-97a3-4209acde646e)
+
+- **Login Page**:
+![image](https://github.com/user-attachments/assets/90d197e6-0f84-48d2-91b3-58d6e3121d5c)
+
+- **Cart Page**:
+![image](https://github.com/user-attachments/assets/8bb57cb2-1e7a-4d3d-9c24-b71e24b4096f)
+
+- **Orders Page**:
+![image](https://github.com/user-attachments/assets/d6ac29d6-6d9b-490d-8cf5-498736abbb7c)
+
+
