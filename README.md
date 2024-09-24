@@ -4,7 +4,7 @@ Welcome to **BuyBusy**, an innovative online shopping/eCommerce website built wi
 This project allows users to create accounts, sign in, manage their shopping cart, and effortlessly view their purchase history, all while ensuring a smooth and enjoyable shopping experience.
 
 
-# [Visit BuyBusy](https://buybusy-onlineshopping.netlify.app/)
+[Visit BuyBusy](https://buybusy-onlineshopping.netlify.app/)
 
 
 
