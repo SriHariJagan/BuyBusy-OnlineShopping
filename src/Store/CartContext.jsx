@@ -14,13 +14,16 @@ const useValues = () => {
 }
 
 function CustomContext({ children }) {
-    const { currentUser } = useAuth(); // Get the current user from Auth context
+    const { currentUser } = useAuth();
     const [searchInput, setSearchInput] = useState('');
-    const [data] = useState(Shopingdata);
+    const [data, setData] = useState(Shopingdata); // Data is filtered
     const [cart, setCart] = useState([]);
     const [totalAmount, setTotalAmount] = useState(0);
-    const [orders, setOrders] = useState([]); // State for orders
+    const [orders, setOrders] = useState([]);
 
+     // Filters states
+     const [priceRange, setPriceRange] = useState(1000); // Max price
+     const [selectedCategories, setSelectedCategories] = useState([]);
 
     // Add Items to Cart
     const addCart = async (product) => {
@@ -140,6 +143,30 @@ function CustomContext({ children }) {
         loadCartFromFirestore();
     }, [currentUser]);
 
+
+    // Function to apply filters
+    const applyFilters = () => {
+        let filteredData = Shopingdata;
+
+        // Filter by selected categories
+        if (selectedCategories.length > 0) {
+            filteredData = filteredData.filter(product =>
+                selectedCategories.includes(product.category)
+            );
+        }
+
+        // Filter by price range
+        filteredData = filteredData.filter(product =>
+            parseInt(product.price) <= priceRange
+        );
+
+        setData(filteredData);
+    };
+
+    useEffect(() => {
+        applyFilters();
+    }, [selectedCategories, priceRange]);
+
     return (
         <CartContext.Provider value={{
             data,
@@ -152,7 +179,12 @@ function CustomContext({ children }) {
             handlePurchase,
             loadOrders, 
             searchInput,
-            setSearchInput
+            setSearchInput,
+            priceRange, 
+            setPriceRange, 
+            selectedCategories, 
+            setSelectedCategories, 
+            applyFilters, 
         }}>
             {children}
         </CartContext.Provider>

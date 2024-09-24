@@ -3,7 +3,7 @@ import styles from './home.module.css';
 import { useValues } from '../../Store/CartContext';
 
 const Aside = () => {
-    const { priceRange, setPriceRange, selectedCategories, setSelectedCategories } = useValues();
+    const { priceRange, setPriceRange, selectedCategories, setSelectedCategories, applyFilters } = useValues(); // Add applyFilters from context
 
     const handleCategoryChange = (e) => {
         const category = e.target.value;
@@ -14,6 +14,12 @@ const Aside = () => {
         } else {
             setSelectedCategories(selectedCategories.filter(cat => cat !== category));
         }
+        applyFilters(); // Call to apply filters
+    };
+
+    const handlePriceChange = (e) => {
+        setPriceRange(parseInt(e.target.value));
+        applyFilters(); // Call to apply filters
     };
 
     return (
@@ -28,7 +34,7 @@ const Aside = () => {
                     max="1000"
                     value={priceRange}
                     className={styles.priceRange}
-                    onChange={(e) => setPriceRange(parseInt(e.target.value))}
+                    onChange={handlePriceChange} // Call the handler for price change
                 />
             </div>
             <div className={styles.filterCategorie}>
