@@ -1,5 +1,5 @@
 // CartContext.js
-import { createContext, useContext, useEffect, useState } from "react";
+import { createContext, useContext, useEffect, useState, useCallback } from "react";
 import { db } from "../firebase";
 import { useAuth } from './FirebaseAutho'; // Import AuthContext
 import { doc, setDoc, getDoc } from "firebase/firestore"; // Firestore functions
@@ -145,7 +145,7 @@ function CustomContext({ children }) {
 
 
     // Function to apply filters
-    const applyFilters = () => {
+    const applyFilters = useCallback(() => {
         let filteredData = Shopingdata;
 
         // Filter by selected categories
@@ -161,11 +161,7 @@ function CustomContext({ children }) {
         );
 
         setData(filteredData);
-    };
-
-    useEffect(() => {
-        applyFilters();
-    }, [selectedCategories, priceRange, applyFilters]);
+    }, [selectedCategories, priceRange]);
 
     return (
         <CartContext.Provider value={{
