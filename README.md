@@ -1,4 +1,4 @@
-# Firebase Authentication and Firestore CRUD Operations
+# BuyBusy-OnlineShopping
 
 This project is a **React-based web application** that demonstrates Firebase Authentication, CRUD operations on the Firestore database, and routing with React Router. It utilizes the React Context API, `useState`, `useEffect`, and advanced hooks to manage authentication, product data, and cart operations. The app includes optimized UI/UX and an organized code structure with a focus on code readability, naming conventions, and comments.
 
