@@ -1,7 +1,8 @@
 # Firebase Authentication and Firestore CRUD Operations
 
-This project is a **React-based web application** that demonstrates Firebase Authentication, CRUD operations on the Firestore database, and routing with React Router. It also utilizes React Context API, `useState`, `useEffect`, and advanced hooks to manage authentication, product data, and cart operations. The app includes optimized UI/UX and organized code structure with a focus on code readability, naming conventions, and comments.
+This project is a **React-based web application** that demonstrates Firebase Authentication, CRUD operations on the Firestore database, and routing with React Router. It utilizes the React Context API, `useState`, `useEffect`, and advanced hooks to manage authentication, product data, and cart operations. The app includes optimized UI/UX and an organized code structure with a focus on code readability, naming conventions, and comments.
 
+---
 
 ## Features
 
@@ -17,7 +18,7 @@ This project is a **React-based web application** that demonstrates Firebase Aut
 
 ### Routing
 - **React Router** is used for handling routing within the app.
-- Dedicated routes for **Home**, **Cart**, **Orders**, and **Authentication** pages.
+- Dedicated routes for **Home**, **Cart**, **Orders**, **Login**, **Signup**, and **Error** pages.
   
 ### State Management and Hooks
 - **React Context API** for global state management.
@@ -41,6 +42,7 @@ This project is a **React-based web application** that demonstrates Firebase Aut
 
 Here’s the overall structure of the project:
 
+```plaintext
 ├── public/
 └── src/
     ├── Asserts/
@@ -59,7 +61,3 @@ Here’s the overall structure of the project:
     │   ├── Orders/           # Orders page components
     │   └── Signup/           # Signup page components
     └── Store/                # Context API and state management
-
-
-    
-
