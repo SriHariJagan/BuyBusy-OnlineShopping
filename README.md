@@ -61,3 +61,9 @@ Here’s the overall structure of the project:
     │   ├── Orders/           # Orders page components
     │   └── Signup/           # Signup page components
     └── Store/                # Context API and state management
+
+
+![image](https://github.com/user-attachments/assets/60f56859-d2b7-433b-bb9a-7e4e93528b37)
+
+
+![image](https://github.com/user-attachments/assets/42c1955c-a0be-49ea-a84d-bd5c4f079846)
