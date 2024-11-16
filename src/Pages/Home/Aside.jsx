@@ -31,7 +31,7 @@ const Aside = () => {
                 <input
                     type="range"
                     min="599"
-                    max="1000"
+                    max="1599"
                     value={priceRange}
                     className={styles.priceRange}
                     onChange={handlePriceChange} // Call the handler for price change

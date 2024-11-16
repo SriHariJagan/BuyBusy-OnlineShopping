@@ -5,17 +5,18 @@ import { getAuth } from "firebase/auth";
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAKw4Xxh6sOBTEoYR-oMy8ojD1TD9vuu1A",
-  authDomain: "buybusy-8f0cd.firebaseapp.com",
-  projectId: "buybusy-8f0cd",
-  storageBucket: "buybusy-8f0cd.appspot.com",
-  messagingSenderId: "275438612146",
-  appId: "1:275438612146:web:bc69057cbe7ba7fdece3ab"
+  apiKey: "AIzaSyBXVjuJgCu9XAwp_ZZQyiHpOvBg6M7_iZM",
+  authDomain: "buybusy-4dc32.firebaseapp.com",
+  projectId: "buybusy-4dc32",
+  storageBucket: "buybusy-4dc32.firebasestorage.app",
+  messagingSenderId: "775577330296",
+  appId: "1:775577330296:web:ff44b9eba7eaf4a5cd838d"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
-const auth = getAuth(app); // Initialize authentication
+const auth = getAuth(app);
+
 export { db, auth };

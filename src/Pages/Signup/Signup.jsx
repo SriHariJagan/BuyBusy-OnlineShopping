@@ -18,9 +18,9 @@ const Signup = () => {
     }else{
       try {
         await signup(email, password, navigate);
-        navigate('/login'); // Redirect after successful signup
+        navigate('/login'); 
       } catch (error) {
-        console.error("Signup failed:", error.message);
+        console.error("Signup failed:", error);
       }
     }
     

@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 90vh;
+    min-height: 89vh;
     background-color: #f0f0f0;
   }
   
@@ -62,7 +62,7 @@
 
   @media (max-width: 800px) {
     .container {
-        min-height: 68vh;
+        min-height: 80vh;
     }
   }
 

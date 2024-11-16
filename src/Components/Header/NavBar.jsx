@@ -22,7 +22,7 @@ const NavBar = () => {
               <span><img src={home} alt="home" /></span> Home
           </NavLink>
 
-          {!currentUser ? (
+          { !currentUser ? (
             <>
               <NavLink to="/login" className={({ isActive }) => (isActive ? `${styles.isActive} ${styles.link}` : `${styles.link}`)}>
                 <span><img src={enter} alt="enter" /></span> Login

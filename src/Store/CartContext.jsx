@@ -113,7 +113,7 @@ function CustomContext({ children }) {
 
     // Fetching orders from db
     const loadOrders = async () => {
-        if (currentUser) {
+        if (!currentUser) {
             const docRef = doc(db, "users", currentUser.uid);
             const docSnap = await getDoc(docRef);
     

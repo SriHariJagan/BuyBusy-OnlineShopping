@@ -60,7 +60,7 @@ const data = [
     },
     {
       "id": 9,
-      "img": "https://i0.wp.com/seematti.com/wp-content/uploads/2024/07/13705275-5.jpg?fit=1280%2C1920&ssl=1",
+      "img": "https://images.jdmagicbox.com/quickquotes/images_main/semi-soft-silk-pattu-saree-pattu-border-saree-2-378530579-jvodt.jpg",
       "name": "Women's Saree",
       "price": 519.99,
       "category": "women"
