@@ -63,6 +63,15 @@ Here’s the overall structure of the project:
     └── Store/                # Context API and state management
 ```
 
+## Demo
+
+You can view the live demo of the app at the following link:  
+[**BuyBusy - Online Shopping Demo**](https://buybusy-onlineshopping.netlify.app/)
+
+---
+
+## Screenshots
+
 ![image](https://github.com/user-attachments/assets/60f56859-d2b7-433b-bb9a-7e4e93528b37)
 
 
